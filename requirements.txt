@@ -1,0 +1,11 @@
+langchain
+openai
+huggingface_hub
+wikipedia
+numexpr  # for llm-math
+langchain-experimental
+google-search-results # serpapi
+langchain-openai
+
+ipywidgets
+trino[sqlalchemy]
