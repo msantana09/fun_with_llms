@@ -6,6 +6,20 @@ numexpr  # for llm-math
 langchain-experimental
 google-search-results # serpapi
 langchain-openai
+nltk
+pandas
+pyarrow
+trino[sqlalchemy]
+transformers==4.36.0
+torch==2.1.1
+sentence-transformers==2.2.2
+llama-cpp-python>=0.2.32
+protobuf # required for PegasusConverter
+
+#vector db
+pgvector
+psycopg2-binary
 
 ipywidgets
-trino[sqlalchemy]
+ipykernel
+urllib3<2.0 # https://github.com/urllib3/urllib3/issues/3020

@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  pgvector-airbnb-listings:
+    container_name: pgvector-airbnb-listings
+    image: ankane/pgvector:v0.5.1
+    labels:
+      - app=pgvector
+    ports:
+      - 5432:5432
+    env_file:
+      - .env.pgvector
+    volumes:
+      - pgvectors-airbnb-data:/var/lib/postgresql/data
+      - ./pgvector/init.sql:/docker-entrypoint-initdb.d/init.sql
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+volumes:
+  pgvectors-airbnb-data:
+ 
