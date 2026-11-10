@@ -7,7 +7,7 @@ Collection of notebooks relating to LLMs. Built January to March 2024.
 - For example, the query 'A cute secluded place with a laid back vibe. A small place, preferably a closet' returns 'Private room in quite area. quite, nice size private room' as its closest listing.
 
 ## 2) Chat with your data
-[sql_agent_trino.ipynb](notebooks/sql_agent_trino.ipynb) - Utilize LangChain and ChatGPT 3.5 to build a simple SQL Agent that lets a user ask questions like "Which neighborhood has the best reviews?" for our AirBnB data, and get an answer from the SQL agent.
+[sql_agent_trino.ipynb](notebooks/sql_agent_trino.ipynb) - Utilize LangChain and gpt-3.5-turbo to build a simple SQL Agent that lets a user ask questions like "Which neighborhood has the best reviews?" for our AirBnB data, and get an answer from the SQL agent.
 
 ## Running
 - The data is the Kaggle Seattle Airbnb dataset (airbnb/seattle), loaded into a Trino lakehouse on localhost:8082 by a separate pipeline.
